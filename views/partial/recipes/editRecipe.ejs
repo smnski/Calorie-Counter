@@ -1,0 +1,35 @@
+<div class="modal fade" id="editRecipeModal-<%= recipe._id %>" tabindex="-1" aria-labelledby="editRecipeModalLabel-<%= recipe._id %>" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between align-items-center">
+        <h5 class="modal-title" id="editRecipeModalLabel-<%= recipe._id %>">Edit Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name-<%= recipe._id %>" class="form-label">Recipe Name</label>
+            <input type="text" class="form-control" id="name-<%= recipe._id %>" name="name" value="<%= recipe.name %>" required autocomplete="off">
+          </div>
+          <div class="mb-3">
+            <label for="calories-<%= recipe._id %>" class="form-label">Calories</label>
+            <input type="number" class="form-control" id="calories-<%= recipe._id %>" name="calories" value="<%= recipe.calories %>" required>
+          </div>
+          <div class="mb-3">
+            <label for="protein-<%= recipe._id %>" class="form-label">Protein</label>
+            <input type="number" class="form-control" id="protein-<%= recipe._id %>" name="protein" value="<%= recipe.protein %>" required>
+          </div>
+          <div class="mb-3">
+            <label for="carbohydrates-<%= recipe._id %>" class="form-label">Carbs</label>
+            <input type="number" class="form-control" id="carbohydrates-<%= recipe._id %>" name="carbohydrates" value="<%= recipe.carbohydrates %>" required>
+          </div>
+          <div class="mb-3">
+            <label for="fats-<%= recipe._id %>" class="form-label">Fats</label>
+            <input type="number" class="form-control" id="fats-<%= recipe._id %>" name="fats" value="<%= recipe.fats %>" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

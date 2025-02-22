@@ -1,0 +1,35 @@
+<div class="modal fade" id="addRecipeModal" tabindex="-1" aria-labelledby="addRecipeModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between align-items-center">
+        <h5 class="modal-title" id="addRecipeModalLabel">Add New Recipe</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="addRecipeForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Recipe Name</label>
+            <input type="text" class="form-control" id="name" name="name" required autocomplete="off">
+          </div>
+          <div class="mb-3">
+            <label for="calories" class="form-label">Calories</label>
+            <input type="number" class="form-control" id="calories" name="calories" required>
+          </div>
+          <div class="mb-3">
+            <label for="protein" class="form-label">Protein</label>
+            <input type="number" class="form-control" id="protein" name="protein" required>
+          </div>
+          <div class="mb-3">
+            <label for="carbohydrates" class="form-label">Carbs</label>
+            <input type="number" class="form-control" id="carbohydrates" name="carbohydrates" required>
+          </div>
+          <div class="mb-3">
+            <label for="fats" class="form-label">Fats</label>
+            <input type="number" class="form-control" id="fats" name="fats" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Recipe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
